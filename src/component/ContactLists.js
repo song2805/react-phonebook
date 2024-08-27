@@ -23,7 +23,7 @@ useEffect(()=> {
   return (
     <div>
       <SearchWindow />
-      <div>
+      <div style={{margin: '10px'}}>
        Contact Total:{searchList.length}
       {searchList.map((item, index) => (<ContactItem item={item} key={index} />))}
       </div>

@@ -29,7 +29,7 @@ const ContactForm = () => {
 
 
 
-      <Form onSubmit={addInfo}>
+      <Form className='name-contact-item' onSubmit={addInfo}>
         <Form.Group className="mb-3" controlId="formName">
           <Form.Label>Name</Form.Label>
           <Form.Control type="text" placeholder="Add the Name" onChange={(event)=>{setName(event.target.value)}} />

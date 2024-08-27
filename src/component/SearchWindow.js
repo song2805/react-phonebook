@@ -15,7 +15,7 @@ const searchByName=(event)=>{
 }
 
   return (
-    <Form onSubmit={searchByName} style={{display: 'flex'}}>
+    <Form className="search-window" onSubmit={searchByName} style={{display: 'flex'}}>
       <Row>
         <Col lg={10}>
           <Form.Control type="text" placeholder="Add the Name" onChange={(event) => setKeyword(event.target.value)} />
