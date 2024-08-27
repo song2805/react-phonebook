@@ -7,10 +7,10 @@ const ContactItem = ({item}) => {
 
   return (
    <Row className="main-contact-item"> 
-    <Col lg={3}>
+    <Col lg={2}>
     <img width={80} style={{padding: '10px'}} src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Unknown_person.jpg" />
     </Col>
-    <Col lg={9}>
+    <Col lg={10}>
     <div>{item.name}</div>
     <div>{item.phoneNumber}</div>
     </Col>
