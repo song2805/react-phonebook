@@ -1,6 +1,6 @@
 import React from 'react'
 import { Row, Col, Form, Button } from 'react-bootstrap'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { useState } from 'react'
 
 
@@ -15,13 +15,13 @@ const searchByName=(event)=>{
 }
 
   return (
-    <Form className="search-window" onSubmit={searchByName} style={{display: 'flex'}}>
-      <Row>
+    <Form  className="search-window" onSubmit={searchByName} style={{display: 'flex'}}>
+      <Row className='search-row'>
         <Col lg={10}>
           <Form.Control type="text" placeholder="Add the Name" onChange={(event) => setKeyword(event.target.value)} />
         </Col>
         <Col lg={2}>
-          <Button variant="primary" type="submit">
+          <Button   variant="primary" type="submit">
             Search
           </Button>
         </Col>
